@@ -1,0 +1,23 @@
+#  https://awesome-prometheus-alerts.grep.to/rules.html
+groups:
+  - name: duration
+    rules:
+      - alert: service_down
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instance {{ $labels.instance }} down."
+          description: ""
+
+  - name: order_status_failed_count_overflow
+    rules:
+      - alert: order_status_failed_count_overflow
+        expr: sum(increase(orderCount_total{bookState="IssueFailed"}[1m]))> 400
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instance {{ $labels.instance }} failed order status count is {{$value}}"
+          description: ""

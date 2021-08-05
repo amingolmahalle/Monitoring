@@ -1,0 +1,27 @@
+databases:
+  db1:
+    dsn: mssql+pyodbc://A_GolMahalleh:Am!nG0lMah@ll3h@ag4-dc.alibaba.local:1433/Altrabo_YellowEngine?driver=ODBC Driver 17 for SQL Server
+    autocommit: false
+metrics:
+  orderCount:
+    type: counter
+    description: Order Status Book Requests
+    labels: [bookState, moduleType]
+    # expiration: 24h
+    # states: [New,SendForReserve,ReserveFailed,Reserved,SendForIssue,IssueFailed,Issued,PriceChanged,WaitForReserve]
+
+queries:
+  query1:
+    interval: 10
+    #  schedule: "*/5 * * * *"
+    databases: [db1]
+    timeout: 2
+    metrics: [orderCount]
+    sql: |
+     select bs.EnTitle                  as bookState,
+       brt.BookRequestType         as moduleType,
+       ABS(CHECKSUM(NewId())) % 14 as orderCount
+       from rs.BookState as bs
+         cross join
+     rs.[BookRequestType] as brt with (nolock)
+     
