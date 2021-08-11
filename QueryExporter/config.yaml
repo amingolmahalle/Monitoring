@@ -1,6 +1,6 @@
 databases:
   db1:
-    dsn: mssql+pyodbc://A_GolMahalleh:Am!nG0lMah@ll3h@db-test:1433/Altrabo_YellowEngine_Prod?driver=ODBC Driver 17 for SQL Server
+    dsn: mssql+pyodbc://Username:Password@ServerAddress:1433/DatabaseName?driver=ODBC Driver 17 for SQL Server
     autocommit: false
 metrics:
   orderCount:
