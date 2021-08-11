@@ -44,4 +44,4 @@ after command successfully executed.check all services are running.
 
 at the end call below url for show dashboard in grafana.
 
-<a href="http://localhost:3000" target="_blank">localhost:3000</a>
+<a href="http://localhost:3000" rel="nofollow">localhost:3000</a>
