@@ -1,12 +1,13 @@
 # Monitoring
 Monitoring System By Prometheus and Grafana. 
+
 we use Below queryExporter in this sample:
 https://github.com/albertodonato/query-exporter
 
-the database we use in example called SqlServer.
-In this example, we want to monitor ticket purchase orders.
+the database we use in example called <b>SqlServer</b>.
+In this example, we want to monitor <b>ticket purchase orders</b>.
 
-To get started , Please Run Below Scripts in Sql Server Managment:
+To get started , Please Run Below Scripts in <b>Sql Server Managment</b>:
 <pre><code>{
   create table dbo.BookState
 (
