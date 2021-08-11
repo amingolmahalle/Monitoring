@@ -8,7 +8,7 @@ the database we use in example called <b>SqlServer</b>.
 In this example, we want to monitor <b>ticket purchase orders</b>.
 
 To get started , Please Run Below Scripts in <b>Sql Server Managment</b>:
-<pre><code>{
+<pre><code>
   create table dbo.BookState
 (
     BookStateId int          not null PRIMARY KEY,
@@ -35,7 +35,7 @@ INSERT INTO dbo.ModuleType (ModuleTypeId, Title) VALUES (1, 'Flight');
 INSERT INTO dbo.ModuleType (ModuleTypeId, Title) VALUES (2, 'Hotel');
 INSERT INTO dbo.ModuleType (ModuleTypeId, Title) VALUES (3, 'Train');
 INSERT INTO dbo.ModuleType (ModuleTypeId, Title) VALUES (4, 'Bus');
-}</code></pre>
+</code></pre>
 
 now run this command from project root directory:
 
