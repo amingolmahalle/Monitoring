@@ -42,6 +42,18 @@ now run this command from project root directory:
 
 after command successfully executed.check all services are running.
 
-at the end call below url for show dashboard in grafana.
+<ul>
+<li><a href="http://localhost:9090/" rel="nofollow">Prometheus</a>  =&gt; <a href="http://localhost:9090/" rel="nofollow">http://localhost:9090/</a></li>
+<li><a href="http://localhost:3000/" rel="nofollow">Grafana</a> =&gt; <a href="http://localhost:3000/" rel="nofollow">http://localhost:3000/</a>
+<ul>
+<li>username: admin password: admin</li>
+</ul>
+</li>
+<li><a href="http://localhost:9093/" rel="nofollow">Alert Manager</a> =&gt; <a href="http://localhost:9093/" rel="nofollow">http://localhost:9093/</a></li>
+<li><a href="http://localhost:9100/" rel="nofollow">Node Exporter</a><a href="http://localhost:9100/" rel="nofollow">http://localhost:9100/</a> =&gt; </li>
+<li><a href="http://localhost:8080/containers/" rel="nofollow">Google cAdvisor</a> =&gt; <a href="http://localhost:8080/containers/" rel="nofollow">http://localhost:8080/containers/</a></li>
+</ul>
 
-<a href="http://localhost:3000" rel="nofollow">localhost:3000</a>
+at the end call <a href="http://localhost:3000" rel="nofollow">this link</a> for show dashboard in grafana.
+
+
