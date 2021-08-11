@@ -39,7 +39,7 @@ INSERT INTO dbo.ModuleType (ModuleTypeId, Title) VALUES (4, 'Bus');
 
 now run this command from project root directory:
 
-<code>docker-compose -f "Prometheus\docker-compose.yml" up -d --build </code>
+<code>sudo docker-compose up -d </code>
 
 after command successfully executed.check all services are running.
 
